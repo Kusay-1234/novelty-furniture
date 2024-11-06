@@ -49,7 +49,7 @@ html {
     position: absolute;
   width: 100%;
   height: 100%;
-  margin-left: -53rem;
+  margin-left: 0rem;
   animation: imageSlide 12s infinite;
 
 }
@@ -95,16 +95,16 @@ html {
 
 .line-one{
   position: absolute;
-  margin-left: -20rem;
-  margin-top: 16rem;
+  margin-left: 3rem;
+  margin-top: -15rem;
   font-size: 32px;
   color: #5DB32E;
 }
 
 .line-two{
   position: absolute;
-  margin-left: -20rem;
-    margin-top: 29rem;
+  margin-left: 2.8rem;
+    margin-top: -2rem;
   font-size: 32px;
   color:  #DC1278;
 }
@@ -115,8 +115,8 @@ html {
 
 .content p{
  position: absolute;
- margin-left: -20rem;
- margin-top: 39rem;
+ margin-left: 3rem;
+ margin-top: 6rem;
  font-size: 25px;
 }
 
@@ -142,16 +142,42 @@ html {
 }
 
 
-.products > div:not(:last-child)::after {
+/* .products > div:not(:last-child)::after {
   content: '';
   position: absolute;
-  top: 50%; /* Place the line in the middle of the image */
-  left: 100%; /* Position the line immediately to the right of the image */
-  width: 205px; /* Width of the line (adjust as needed) */
-  height: 4.5px; /* Line thickness */
-  background-color: grey; /* Line color */
+  top: 50%; 
+  left: 100%; 
+  width: 205px;
+  height: 4.5px; 
+  background-color: grey; 
   transform: translateY(-50%);
 
+} */
+
+
+
+.line{
+  border: 3px solid grey;
+  width: 230%;
+  position: absolute;
+  top: 55px;
+  left: 93px;
+}
+
+.line1{
+  border: 3px solid grey;
+  width: 172%;
+  position: absolute;
+  top: 55px;
+  left: 113px;
+}
+
+.line2{
+  border: 3px solid grey;
+  width: 205%;
+  position: absolute;
+  top: 55px;
+  left: 99px;
 }
 
 
@@ -166,6 +192,7 @@ html {
   width: 100px;
   height: 100px;
   transition: transform 0.3s ease; 
+  position: relative;
 }
 
 .almira {
@@ -469,7 +496,7 @@ footer{
     position: absolute;
   width: 85%;
   height: auto;
-  margin-left: -200px;
+  margin-left: 75px;
   animation: imageSlide 12s infinite;
 
 }
@@ -511,29 +538,30 @@ footer{
 
   .line-one{
     font-size: 15px;
-    top: -30%; /* Adjust the position so it doesn't overlap */
-    left: 330px;
+     /* Adjust the position so it doesn't overlap */
+    left: -35px;
+    top: 58%;
     transform: translateY(0);
   }
 
   .line-two{
     font-size: 15px;
-    top: -56%; /* Adjust the position so it doesn't overlap */
-    left: 328px;
+    top: 31%; /* Adjust the position so it doesn't overlap */
+    left: -33px;
     transform: translateY(0);
   }
 
   .content p{
-    font-size: 13px;
-    top: -74%; /* Adjust the position so it doesn't overlap */
-    left: 329px;
+    font-size: 10px;
+    top: 18%; /* Adjust the position so it doesn't overlap */
+    left: -35px;
     transform: translateY(0);
   }
 
  
   #img-content{
     font-size: 14px;
-    margin-top: 190px;
+    margin-top: 210px;
     margin-left: 10px;
     transform: translateY(0);
   }
@@ -551,14 +579,67 @@ footer{
     height: 50px;
   }
 
+  .line {
+    width: 100%; /* Increase the line width for small screens */
+    left: 97%;    /* Adjust the positioning */
+    top: 23px; 
+    margin: 0px auto;    /* Adjust vertical position */
+   
+  }
+
+  .line1 {
+    width: 73%;  /* Increase the line width for small screens */
+    left: 88%;    /* Adjust the positioning */
+    top: 23px;     /* Adjust vertical position */
+    margin: 0 auto;
+  }
+
+  .line2 {
+    width: 73%;  /* Increase the line width for small screens */
+    left: 104%;    /* Adjust the positioning */
+    top: 23px; 
+    margin: 0 auto;    /* Adjust vertical position */
+  }
+
+
+
+  .line, .line1, .line2 {
+    position: absolute;  /* Absolute positioning to place lines relative to container */
+    height: 2px;         /* Line height */
+    background-color: black;  /* Line color */
+    top: 23px;           /* Positioning the lines vertically */
+  }
+
+  .line {
+    width: 20vw;  /* Set width relative to the viewport width */
+    left: 97%;    /* Position the line near the last image */
+    transform: translateX(-50%);  /* Center the line horizontally */
+  }
+
+  .line1 {
+    width: 15vw;  /* Set width relative to the viewport width */
+    left: 88%;    /* Position the line near the first image */
+    transform: translateX(-50%);  /* Center the line horizontally */
+  }
+
+  .line2 {
+    width: 15vw;  /* Set width relative to the viewport width */
+    left: 104%;   /* Position the line near the second image */
+    transform: translateX(-50%);  /* Center the line horizontally */
+  }
+
+  .line, .line1, .line2{
+    display: none;
+  }
+
+
+
+
   .almira {
     font-size: 13px; /* Adjust font size for smaller screens */
   }
 
-  .products > div:not(:last-child)::after {
-    width: calc(100% - 20px);
-    height: 2px;
-  }
+  
 
   .main-container,
   .main-container1,
@@ -594,16 +675,19 @@ footer{
   .main-container1 h2,
   .main-container2 h2,
   .main-container3 h2 {
-    margin-left: 20px;
-    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    margin-left: 0px;
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    text-align: center;
   }
 
   .main-container p,
   .main-container1 p,
   .main-container2 p,
   .main-container3 p {
-    margin-left: 20px;
-    font-size: 1rem; /* Reduce font size for smaller screens */
+    margin-left: 8px;
+    margin-top: -1px;
+    font-size: 0.9rem; 
+    text-align: center;/* Reduce font size for smaller screens */
   }
 
   /* Adjust padding-top for better spacing on small screens */
@@ -618,7 +702,7 @@ footer{
   .main-container1 p,
   .main-container2 p,
   .main-container3 p {
-    padding-top: 10px;
+    padding-top: 0px;
   }
 
   /* Adjust hover effects for images on smaller screens */
@@ -649,6 +733,11 @@ footer{
     top: -10px;
   }
 
+  .image-container1 img{
+    width: 60%;
+    margin-left: 70px;
+  }
+
   .logo1{
     margin-top: 90px;
   }
@@ -657,9 +746,17 @@ footer{
     margin-bottom: 50px;
   }
 
-
   .contact a{
-    font-size: 8px;
+    font-size: 9px;
+  }
+
+  .contact img{
+    height: 18px;
+    width: 18px;
+  }
+
+  .foot h2{
+    font-size: 1.3rem;
   }
   
 
@@ -722,7 +819,7 @@ footer{
     position: absolute;
   width: 85%;
   height: auto;
-  margin-left: -365px;
+  margin-left: 111px;
   animation: imageSlide 12s infinite;
 
 }
@@ -764,29 +861,29 @@ footer{
 
   .line-one{
     font-size: 22px;
-    top: -25%; /* Adjust the position so it doesn't overlap */
-    left: 360px;
+    top: 60%; /* Adjust the position so it doesn't overlap */
+    left: 0px;
     transform: translateY(0);
   }
 
   .line-two{
     font-size: 22px;
-    top: -48%; /* Adjust the position so it doesn't overlap */
-    left: 355px;
+    top: 37%; /* Adjust the position so it doesn't overlap */
+    left: 0px;
     transform: translateY(0);
   }
 
   .content p{
     font-size: 18px;
-    top: -62%; /* Adjust the position so it doesn't overlap */
-    left: 357px;
+    top: 28%; /* Adjust the position so it doesn't overlap */
+    left: 0px;
     transform: translateY(0);
   }
 
  
   #img-content{
     font-size: 14px;
-    margin-top: 20rem;
+    margin-top: 22rem;
     margin-left: 10px;
     /* transform: translateY(0); */
     position: relative;
@@ -805,15 +902,26 @@ footer{
     height: 65px;
   }
 
-  .almira {
-    font-size: 13px; /* Adjust font size for smaller screens */
+  .line{
+    left: 95%;
+    top: 40%;
+    width: 85%;
   }
 
-  .products > div:not(:last-child)::after {
-    left: 135%; /* Adjust line position for center alignment */
-    width: 90%; /* Shorten the line */
-    bottom: 56%; /* Adjust line position relative to text */
-    transform: translateX(-42%); /* Center the line */
+  .line1{
+    left: 95%;
+    top: 40%;
+    width: 80%;
+  }
+
+  .line2{
+    left: 100%;
+    top: 40%;
+    width: 75%;
+  }
+
+  .almira {
+    font-size: 13px; /* Adjust font size for smaller screens */
   }
 
   .main-container,
@@ -929,8 +1037,19 @@ footer{
 
   .contact{
     margin-bottom: 50px;
+}
 
+.contact a{
+  font-size: 10px;
+}
 
+.contact img{
+  height: 30px;
+  width: 30px;
+}
+
+.foot h2{
+  font-size: 1.2rem;
 }
 }
 
@@ -989,7 +1108,7 @@ footer{
     position: absolute;
   width: 85%;
   height: auto;
-  margin-left: -465px;
+  margin-left: 175px;
   animation: imageSlide 12s infinite;
 
 }
@@ -1030,30 +1149,30 @@ footer{
 
 
   .line-one{
-    font-size: 22px;
-    top: -25%; /* Adjust the position so it doesn't overlap */
-    left: 360px;
+    font-size: 26px;
+    top: 65%; /* Adjust the position so it doesn't overlap */
+    left: 0px;
     transform: translateY(0);
   }
 
   .line-two{
-    font-size: 22px;
-    top: -48%; /* Adjust the position so it doesn't overlap */
-    left: 355px;
+    font-size: 26px;
+    top: 44%; /* Adjust the position so it doesn't overlap */
+    left: 0px;
     transform: translateY(0);
   }
 
   .content p{
-    font-size: 18px;
-    top: -62%; /* Adjust the position so it doesn't overlap */
-    left: 357px;
+    font-size: 20px;
+    top: 37%; /* Adjust the position so it doesn't overlap */
+    left: 0px;
     transform: translateY(0);
   }
 
  
   #img-content{
-    font-size: 14px;
-    margin-top: 335px;
+    font-size: 15px;
+    margin-top: 450px;
     margin-left: 10px;
     transform: translateY(0);
   }
@@ -1204,6 +1323,38 @@ footer{
 }
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .main-container, .main-container2, .main-container3{
+    max-width: 92%;
+  }
+
+  .main-container2 h2{
+    padding-top: 25px;
+  }
+
+  .main-container1{
+    max-width: 95%;
+  }
+
+  .main-container h2, .main-container1 h2, .main-container2 h2 .main-container3 h2{
+    font-size: 2.8rem;
+  }
+
+  .main-container p, .main-container1 p, .main-container2 p .main-container3 p{
+    max-width: 51%;
+    font-size: 2rem;
+    padding-top: 0px;
+  }
+
+  .image-container1, .image-container3{
+    margin-left: 650px;
+  }
+}
+
 @media only screen and (min-width: 481px) and (max-width: 715px){
   .front {
     flex-direction: column; /* Stack images and content vertically */
@@ -1212,7 +1363,7 @@ footer{
 
   .front img {
     position: absolute; /* Use relative positioning for responsive images */
-    margin-left: -150px; /* Reset margin-left to avoid cutting off images */
+    margin-left: 135px; /* Reset margin-left to avoid cutting off images */
     width: 80%; /* Make images smaller to fit better on mobile */
     height: auto; /* Maintain aspect ratio */
     
@@ -1221,22 +1372,22 @@ footer{
 
   .line-one {
     font-size: 16px;
-    top: -25%;
-    left: 360px;
+    top: 59%;
+    left: -15px;
     transform: translateY(0);
 }
 
 .line-two {
   font-size: 16px;
-  top: -51%;
-  left: 358px;
+  top: 33%;
+  left: -13px;
   transform: translateY(0);
 }
 
 .content p {
   font-size: 14px;
-  top: -68%;
-  left: 357px;
+  top: 21%;
+  left: -16px;
   transform: translateY(0);
 }
 
@@ -1282,241 +1433,50 @@ footer{
 
 
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px)  {
-
-  /* header{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  main{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  } */
-  
-  footer{
-    height: 100%;
-    width: 100%;
-  }
-
-  body{
-    overflow-x: hidden;
-  }
-h1{
-  margin-top: 250px
-}
-
-
-
-
+@media only screen and (max-width: 300px){
   .front img{
-    position: absolute;
-  width: 85%;
-  height: auto;
-  margin-left: -465px;
-  animation: imageSlide 12s infinite;
-
-}
-
-
-.front img:nth-child(1) {
-  animation-delay: 0s;  
-}
-
-.front img:nth-child(2) {
-  animation-delay: 2s;  
-}
-
-.front img:nth-child(3) {
-  animation-delay: 4s; 
-}
-
-.front img:nth-child(4) {
-  animation-delay: 8s; 
-}
-
-
-@keyframes imageSlide {
-  0% {
-    opacity: 0;  
+    margin-left: 65px;
   }
-  25% {
-    opacity: 1;  
-  }
-  50% {
-    opacity: 0; 
-  }
-  100% {
-    opacity: 0;  
-  }
-}
 
+  
 
-
-
-
-
-
- 
-  #img-content{
-    font-size: 14px;
-    margin-top: 335px;
-    margin-left: 10px;
+  .line-one{
+    font-size: 8px;
+     /* Adjust the position so it doesn't overlap */
+    left: -35px;
+    top: 58%;
     transform: translateY(0);
   }
 
- 
-
-  .main-container,
-  .main-container1,
-  .main-container2,
-  .main-container3 {
-    width: 100%;
-    height: 200px;
-    margin-left: 0;
-    margin-top: 40px;
+  .line-two{
+    font-size: 8px;
+    top: -52%; /* Adjust the position so it doesn't overlap */
+    left: -33px;
+    transform: translateY(0);
   }
 
-  .image-container,
-  .image-container1,
-  .image-container2,
-  .image-container3 {
-    width: 30%;
-    height: 255px;
-    margin-left: 20px;
-    top: -40%;
-    margin-top: -227px;
-  }
-
-  .image-container img,
-  .image-container1 img,
-  .image-container2 img,
-  .image-container3 img {
-    width: 110%;
-    height: 280px;
-    margin-left: -10px;
-    top: -22px;
-    position: relative;
-  }
-
-  .main-container h2,
-  .main-container1 h2,
-  .main-container2 h2,
-  .main-container3 h2 {
-    margin-left: 0px;
-    font-size: 2rem; /* Reduce font size for smaller screens */
-  }
-
-  .main-container p,
-  .main-container1 p,
-  .main-container2 p,
-  .main-container3 p {
-    margin-left: 0px;
-    font-size: 1.4rem; /* Reduce font size for smaller screens */
-  }
-
-  /* Adjust padding-top for better spacing on small screens */
-  .main-container h2,
-  .main-container1 h2,
-  .main-container2 h2,
-  .main-container3 h2 {
-    padding-top: 25px;
-  }
-
-  .main-container p,
-  .main-container1 p,
-  .main-container2 p,
-  .main-container3 p {
-    padding-top: 3px;
-  }
-
-  /* Adjust hover effects for images on smaller screens */
-  .image-container img:hover,
-  .image-container1 img:hover,
-  .image-container2 img:hover,
-  .image-container3 img:hover {
-    transform: scale(1.05); /* Slightly less scaling for small screens */
-  }
-
-  .main-container1 p, .main-container3 p{
-    max-width: 100%;
-  }
-
-  .image-container3{
-    height: 265px;
-  }
-
-  .image-container1, .image-container3{
-    position: relative;
-    left: 66%;
-  }
-
-  .main-container1 h2, .main-container1 p, .main-container3 h2, .main-container3 p{
-    margin-left: 25px;
-    max-width: 60%;
-  }
-
-  .image-container2 img{
-    top: 10px;
-  }
-
-  .image-container2{
-    height: 300px;
-  }
-
-  .image-container3 img{
-    top: -10px;
-    width: 95%;
-    left: 6%;
-  }
-
-  .main-container h2, .main-container p, .main-container2 h2, .main-container2 p{
-    position: relative;
-    left: 35%;
-    max-width: 60%;
-  }
-
-
-
-  .logo1{
-    margin-top: 90px;
-  }
-
-  .contact{
-    margin-bottom: 50px;
-
-
-}
-}
-
-
-
-@media only screen and (max-width: 300px){
-  .front img{
-    margin-left: -120px;
-  }
-
-  .line-one, .line-two{
+  .content p{
     font-size: 10px;
+    top: 8%; /* Adjust the position so it doesn't overlap */
+    left: -37px;
+    transform: translateY(0);
   }
 
   .line-one{
-    margin-top: 18rem;
+    margin-top: -16rem;
   }
 
   .line-two{
-    margin-top: 30rem;
+    margin-top: 26.5rem;
   }
   #img-content{
-    margin-top: -50px;
+    margin-top: 140px;
   }
 }
 
 @media only screen and (min-width: 301px) and (max-width: 400px){
   .front img{
-    margin-left: -160px;
+    margin-left: 55px;
   }
 
   .line-one, .line-two{
@@ -1525,6 +1485,27 @@ h1{
 
   .content p{
     margin-top: 37rem;
+  }
+  .line-one{
+    /* font-size: 15px; */
+     /* Adjust the position so it doesn't overlap */
+    left: -35px;
+    top: 58%;
+    transform: translateY(0);
+  }
+
+  .line-two{
+    /* font-size: 15px; */
+    top: -52%; /* Adjust the position so it doesn't overlap */
+    left: -33px;
+    transform: translateY(0);
+  }
+
+  .content p{
+    font-size: 10px;
+    top: -70%; /* Adjust the position so it doesn't overlap */
+    left: -35px;
+    transform: translateY(0);
   }
 
   
@@ -1540,7 +1521,44 @@ h1{
 
 @media only screen and (min-width: 765px) and (max-width: 900px){
   .front img{
-    margin-left: -100px;
+    margin-left: 125px;
+  }
+
+  #img-content{
+    margin-top: 400px;
+  }
+}
+
+
+@media only screen and (min-width: 1441px){
+  header{
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+ 
+
+  main{
+    height: 100%;
+    width: 100%;
+   
+  }
+
+  footer {
+    height: 100%;
+    width:100%;
+  }
+
+  .front img{
+    height: auto;
+  }
+
+  #img-content{
+    margin-top: 70rem;
   }
 }
 
