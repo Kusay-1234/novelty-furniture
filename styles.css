@@ -566,22 +566,30 @@ footer {
     font-size: 15px;
     /* Adjust the position so it doesn't overlap */
     left: -35px;
-    top: 37%;
+
+    top: 37%;/*local change*/
+
+  
     transform: translateY(0);
   }
 
   .line-two {
     font-size: 15px;
-    top: 20%;
-    /* Adjust the position so it doesn't overlap */
+    top: 20%; /*l;ocal change*/
+    
+
     left: -33px;
     transform: translateY(0);
   }
 
   .content p {
     font-size: 10px;
-    top: 12%;
+
+    top: 12%;/*local change*/
     /* Adjust the position so it doesn't overlap */
+
+
+
     left: -35px;
     transform: translateY(0);
   }
