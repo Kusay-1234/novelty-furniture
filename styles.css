@@ -7,6 +7,10 @@ body{
 background-color: #FFFAE6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo{
   display: flex;
   justify-content: space-between;
@@ -38,53 +42,87 @@ background-color: #FFFAE6;
 .front{
   display: flex;
   justify-content: space-evenly;
+} 
+
+  .front img{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: -53rem;
+  animation: imageSlide 12s infinite;
+
 }
 
 
-.front img{
-  width: 100%;
-  height: 100%;
-  margin-left: -10px;
+.front img:nth-child(1) {
+  animation-delay: 0s;  
+}
 
+.front img:nth-child(2) {
+  animation-delay: 2s;  
+}
+
+.front img:nth-child(3) {
+  animation-delay: 4s; 
+}
+
+.front img:nth-child(4) {
+  animation-delay: 8s; 
+}
+
+
+@keyframes imageSlide {
+  0% {
+    opacity: 0;  
+  }
+  25% {
+    opacity: 1;  
+  }
+  50% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 0;  
+  }
 }
 
 .content {
   display: flex;
-  flex-direction: column; /* Ensure text is stacked vertically */
+  flex-direction: column; 
   justify-content: center; 
 }
 
 .line-one{
   position: absolute;
-  margin-left: 40px;
-  margin-top: -380px;
+  margin-left: -20rem;
+  margin-top: 16rem;
   font-size: 32px;
   color: #5DB32E;
 }
 
 .line-two{
   position: absolute;
-  margin-left: 35px;
-  margin-top: -150px;
+  margin-left: -20rem;
+    margin-top: 29rem;
   font-size: 32px;
   color:  #DC1278;
 }
 
 .line-one h2, .line-two h2 {
-  margin: 0; /* Removes default margin on h2 elements */
+  margin: 0; 
 }
-
-.content p{
-  position: absolute;
-  margin-left: 40px;
-  font-size: 25px;
-}
-
 
 #img-content{
-  margin-top: -150px;
+  margin-top: 31rem;
   font-size: 1.5rem;
   margin-left: 30px;
+}
+
+ .content p{
+  position: absolute;
+  margin-left: -20rem;
+  margin-top: 39rem;
+  font-size: 25px;
 }
 
 .products {
@@ -163,10 +201,16 @@ h1{
   transition: transform 0.3s ease; 
 }
 
-.main-container h2{
-  margin-top: 50px;
-  margin-left: 200px;
-  font-size: 28px;
+.main-container h2, .main-container p{
+  margin-left: 380px;
+  font-size: 4rem;
+  color: white;
+  padding-top: 50px;
+}
+
+.main-container p{
+  font-size: 2rem;
+  padding-top: 15px;
 }
 
 .main-container1{
@@ -195,6 +239,19 @@ h1{
   transition: transform 0.3s ease; 
 }
 
+.main-container1 h2, .main-container1 p{
+  margin-left: 50px;
+  font-size: 4rem;
+  color: white;
+  padding-top: 50px;
+}
+
+.main-container1 p{
+  font-size: 2rem;
+  padding-top: 5px;
+  max-width: 60%;
+}
+
 .main-container2{
   height: 300px;
   width: 1150px;
@@ -219,6 +276,18 @@ h1{
   position: relative;
   top: 30px;
   transition: transform 0.3s ease; 
+}
+
+.main-container2 h2, .main-container2 p{
+  margin-left: 370px;
+  font-size: 4rem;
+  color: white;
+  padding-top: 50px;
+}
+
+.main-container2 p{
+  font-size: 2rem;
+  padding-top: 5px;
 }
 
 .main-container3{
@@ -247,6 +316,20 @@ h1{
   transition: transform 0.3s ease; 
 }
 
+
+.main-container3 h2, .main-container3 p{
+  margin-left: 50px;
+  font-size: 4rem;
+  color: white;
+  padding-top: 50px;
+}
+
+.main-container3 p{
+  font-size: 2rem;
+  padding-top: 5px;
+  max-width: 60%;
+}
+
 .image-container img:hover {
   transform: scale(1.1); /* Scale the image by 1.1 times when hovered */
 }
@@ -261,15 +344,6 @@ h1{
 
 .image-container3 img:hover {
   transform: scale(1.1); /* Scale the image by 1.1 times when hovered */
-}
-
-.cont {
-  margin-left: 50px; /* Space between the image and content */
-  color: white;
-  font-size: 25px;
-  position: relative;
-  top: -300px;
-  /* left: 350px; */
 }
 
 footer{
@@ -318,4 +392,543 @@ footer{
 
 .contact p{
   margin-top: 5px;
+}
+
+.whatsapp img{
+  vertical-align: middle;
+}
+
+.contact a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+@media only screen and (max-width: 480px)  {
+
+  /* header{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  main{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  } */
+  
+  footer{
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 70px;
+  }
+
+  /* Make navbar items stack vertically and center-align */
+  .navbar {
+    
+   
+    padding-right: 20px;            /* Remove right padding */
+   
+  }
+
+  .navbar li{
+    margin-left: 20px;
+  }
+
+  .navbar a {
+    margin-left: 0;              /* Remove left margin */
+    margin-bottom: 10px;         /* Add margin at the bottom for spacing */
+    font-size: 14px;             /* Adjust font size for better readability */
+  }
+
+  .navbar a:hover {
+    color: #3F9D00;              /* Keep the hover effect intact */
+  }
+
+
+  .front img{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  animation: imageSlide 12s infinite;
+
+}
+
+
+.front img:nth-child(1) {
+  animation-delay: 0s;  
+}
+
+.front img:nth-child(2) {
+  animation-delay: 2s;  
+}
+
+.front img:nth-child(3) {
+  animation-delay: 4s; 
+}
+
+.front img:nth-child(4) {
+  animation-delay: 8s; 
+}
+
+
+@keyframes imageSlide {
+  0% {
+    opacity: 0;  
+  }
+  25% {
+    opacity: 1;  
+  }
+  50% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 0;  
+  }
+}
+
+
+
+  .line-one{
+    font-size: 15px;
+    top: -30%; /* Adjust the position so it doesn't overlap */
+    left: 330px;
+    transform: translateY(0);
+  }
+
+  .line-two{
+    font-size: 15px;
+    top: -56%; /* Adjust the position so it doesn't overlap */
+    left: 328px;
+    transform: translateY(0);
+  }
+
+  .content p{
+    font-size: 13px;
+    top: -74%; /* Adjust the position so it doesn't overlap */
+    left: 329px;
+    transform: translateY(0);
+  }
+
+ 
+  #img-content{
+    font-size: 14px;
+    margin-top: 170px;
+    margin-left: 10px;
+    transform: translateY(0);
+  }
+
+  .products {
+    margin-top: 20px;
+  }
+
+  .products > div {
+    margin-bottom: 15px; /* Add spacing between items */
+  }
+
+  .products img {
+    width: 50px; /* Reduce image size */
+    height: 50px;
+  }
+
+  .almira {
+    font-size: 13px; /* Adjust font size for smaller screens */
+  }
+
+  .products > div:not(:last-child)::after {
+    left: 126%; /* Adjust line position for center alignment */
+    width: 55%; /* Shorten the line */
+    bottom: 56%; /* Adjust line position relative to text */
+    transform: translateX(-42%); /* Center the line */
+  }
+
+  .main-container,
+  .main-container1,
+  .main-container2,
+  .main-container3 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .image-container,
+  .image-container1,
+  .image-container2,
+  .image-container3 {
+    width: 100%;
+    height: 150px;
+    margin-left: 0;
+    top: 0;
+  }
+
+  .image-container img,
+  .image-container1 img,
+  .image-container2 img,
+  .image-container3 img {
+    width: 77%;
+    height: 250px;
+    margin-left: 29px;
+    top: -66px;
+  }
+
+  .main-container h2,
+  .main-container1 h2,
+  .main-container2 h2,
+  .main-container3 h2 {
+    margin-left: 20px;
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .main-container p,
+  .main-container1 p,
+  .main-container2 p,
+  .main-container3 p {
+    margin-left: 20px;
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  /* Adjust padding-top for better spacing on small screens */
+  .main-container h2,
+  .main-container1 h2,
+  .main-container2 h2,
+  .main-container3 h2 {
+    padding-top: 5px;
+  }
+
+  .main-container p,
+  .main-container1 p,
+  .main-container2 p,
+  .main-container3 p {
+    padding-top: 10px;
+  }
+
+  /* Adjust hover effects for images on smaller screens */
+  .image-container img:hover,
+  .image-container1 img:hover,
+  .image-container2 img:hover,
+  .image-container3 img:hover {
+    transform: scale(1.05); /* Slightly less scaling for small screens */
+  }
+
+  .main-container1 p, .main-container3 p{
+    max-width: 100%;
+  }
+
+  .image-container2{
+    height: 275px;
+  }
+
+  .image-container3{
+    height: 220px;
+  }
+
+  .image-container2 img{
+    top: 10px;
+  }
+
+  .image-container3 img{
+    top: -10px;
+  }
+
+  .logo1{
+    margin-top: 90px;
+  }
+
+  .contact{
+    margin-bottom: 50px;
+  }
+
+  .contact p{
+    font-size: 8px;
+    margin-top: 10px;
+  }
+
+  .whatsapp a{
+    font-size: 8px;
+  }
+  
+
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px)  {
+
+  /* header{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  main{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  } */
+  
+  footer{
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 70px;
+  }
+
+  /* Make navbar items stack vertically and center-align */
+  .navbar {
+    
+   
+    padding-right: 50px;            /* Remove right padding */
+   
+  }
+
+  .navbar li{
+    margin-left: 50px;
+  }
+
+  .navbar a {
+    margin-left: 0;              /* Remove left margin */
+    margin-bottom: 10px;         /* Add margin at the bottom for spacing */
+    font-size: 14px;             /* Adjust font size for better readability */
+  }
+
+  .navbar a:hover {
+    color: #3F9D00;              /* Keep the hover effect intact */
+  }
+
+
+  .front img{
+    position: absolute;
+  width: 85%;
+  height: auto;
+  margin-left: -365px;
+  animation: imageSlide 12s infinite;
+
+}
+
+
+.front img:nth-child(1) {
+  animation-delay: 0s;  
+}
+
+.front img:nth-child(2) {
+  animation-delay: 2s;  
+}
+
+.front img:nth-child(3) {
+  animation-delay: 4s; 
+}
+
+.front img:nth-child(4) {
+  animation-delay: 8s; 
+}
+
+
+@keyframes imageSlide {
+  0% {
+    opacity: 0;  
+  }
+  25% {
+    opacity: 1;  
+  }
+  50% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 0;  
+  }
+}
+
+
+
+  .line-one{
+    font-size: 22px;
+    top: -25%; /* Adjust the position so it doesn't overlap */
+    left: 360px;
+    transform: translateY(0);
+  }
+
+  .line-two{
+    font-size: 22px;
+    top: -48%; /* Adjust the position so it doesn't overlap */
+    left: 355px;
+    transform: translateY(0);
+  }
+
+  .content p{
+    font-size: 18px;
+    top: -62%; /* Adjust the position so it doesn't overlap */
+    left: 357px;
+    transform: translateY(0);
+  }
+
+ 
+  #img-content{
+    font-size: 14px;
+    margin-top: 335px;
+    margin-left: 10px;
+    transform: translateY(0);
+  }
+
+  .products {
+    margin-top: 20px;
+  }
+
+  .products > div {
+    margin-bottom: 15px; /* Add spacing between items */
+  }
+
+  .products img {
+    width: 65px; /* Reduce image size */
+    height: 65px;
+  }
+
+  .almira {
+    font-size: 13px; /* Adjust font size for smaller screens */
+  }
+
+  .products > div:not(:last-child)::after {
+    left: 135%; /* Adjust line position for center alignment */
+    width: 90%; /* Shorten the line */
+    bottom: 56%; /* Adjust line position relative to text */
+    transform: translateX(-42%); /* Center the line */
+  }
+
+  .main-container,
+  .main-container1,
+  .main-container2,
+  .main-container3 {
+    width: 100%;
+    height: 160px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .image-container,
+  .image-container1,
+  .image-container2,
+  .image-container3 {
+    width: 28%;
+    height: 15%;
+    margin-left: 20px;
+    top: -40%;
+    margin-top: -200px;
+  }
+
+  .image-container img,
+  .image-container1 img,
+  .image-container2 img,
+  .image-container3 img {
+    width: 104%;
+    height: 230px;
+    margin-left: 0px;
+    top: -13px;
+    position: relative;
+  }
+
+  .main-container h2,
+  .main-container1 h2,
+  .main-container2 h2,
+  .main-container3 h2 {
+    margin-left: 245px;
+    font-size: 1.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .main-container p,
+  .main-container1 p,
+  .main-container2 p,
+  .main-container3 p {
+    margin-left: 245px;
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+
+  /* Adjust padding-top for better spacing on small screens */
+  .main-container h2,
+  .main-container1 h2,
+  .main-container2 h2,
+  .main-container3 h2 {
+    padding-top: 25px;
+  }
+
+  .main-container p,
+  .main-container1 p,
+  .main-container2 p,
+  .main-container3 p {
+    padding-top: 3px;
+  }
+
+  /* Adjust hover effects for images on smaller screens */
+  .image-container img:hover,
+  .image-container1 img:hover,
+  .image-container2 img:hover,
+  .image-container3 img:hover {
+    transform: scale(1.05); /* Slightly less scaling for small screens */
+  }
+
+  .main-container1 p, .main-container3 p{
+    max-width: 100%;
+  }
+
+  .image-container2{
+    height: 275px;
+  }
+
+  .image-container3{
+    height: 220px;
+  }
+
+  .image-container1, .image-container3{
+    position: relative;
+    left: 66%;
+  }
+
+  .main-container1 h2, .main-container1 p, .main-container3 h2, .main-container3 p{
+    margin-left: 25px;
+    max-width: 60%;
+  }
+
+  .image-container2 img{
+    top: 10px;
+  }
+
+  .image-container3 img{
+    top: -10px;
+  }
+
+  .logo1{
+    margin-top: 90px;
+  }
+
+  .contact{
+    margin-bottom: 50px;
+  }
+  /*
+  .contact p{
+    font-size: 8px;
+    margin-top: 10px;
+  }
+
+  .whatsapp a{
+    font-size: 8px;
+  }  */
+  
+
+
 }
