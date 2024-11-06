@@ -1,52 +1,55 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
+  font-style: normal;
 }
-body{
-background-color: #FFFAE6;
+
+body {
+  background-color: #FFFAE6;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: space-between;
 }
 
-.logo img{
+.logo img {
   height: 70px;
   width: 95px;
 }
 
-.navbar{
+.navbar {
   display: flex;
   list-style: none;
   padding: 20px;
   padding-right: 120px;
-  
+
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: black;
   margin-left: 50px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   color: #3F9D00;
 }
 
-.front{
+.front {
   display: flex;
   justify-content: space-evenly;
   /* position: relative; */
-} 
+}
 
-  .front img{
-    position: absolute;
+.front img {
+  position: absolute;
   width: 100%;
   height: 100%;
   margin-left: 0rem;
@@ -56,44 +59,47 @@ html {
 
 
 .front img:nth-child(1) {
-  animation-delay: 0s;  
+  animation-delay: 0s;
 }
 
 .front img:nth-child(2) {
-  animation-delay: 2s;  
+  animation-delay: 2s;
 }
 
 .front img:nth-child(3) {
-  animation-delay: 4s; 
+  animation-delay: 4s;
 }
 
 .front img:nth-child(4) {
-  animation-delay: 8s; 
+  animation-delay: 8s;
 }
 
 
 @keyframes imageSlide {
   0% {
-    opacity: 0;  
+    opacity: 0;
   }
+
   25% {
-    opacity: 1;  
+    opacity: 1;
   }
+
   50% {
-    opacity: 0; 
+    opacity: 0;
   }
+
   100% {
-    opacity: 0;  
+    opacity: 0;
   }
 }
 
 .content {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
 }
 
-.line-one{
+.line-one {
   position: absolute;
   margin-left: 3rem;
   margin-top: -15rem;
@@ -101,26 +107,27 @@ html {
   color: #5DB32E;
 }
 
-.line-two{
+.line-two {
   position: absolute;
   margin-left: 2.8rem;
-    margin-top: -2rem;
+  margin-top: -2rem;
   font-size: 32px;
-  color:  #DC1278;
+  color: #DC1278;
 }
 
-.line-one h2, .line-two h2 {
-  margin: 0; 
+.line-one h2,
+.line-two h2 {
+  margin: 0;
 }
 
-.content p{
- position: absolute;
- margin-left: 3rem;
- margin-top: 6rem;
- font-size: 25px;
+.content p {
+  position: absolute;
+  margin-left: 3rem;
+  margin-top: 6rem;
+  font-size: 25px;
 }
 
-#img-content{
+#img-content {
   margin-top: 31rem;
   font-size: 1.5rem;
   margin-left: 30px;
@@ -134,7 +141,7 @@ html {
   margin-top: 30px;
 }
 
-.products > div {
+.products>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,7 +163,7 @@ html {
 
 
 
-.line{
+.line {
   border: 3px solid grey;
   width: 230%;
   position: absolute;
@@ -164,7 +171,7 @@ html {
   left: 93px;
 }
 
-.line1{
+.line1 {
   border: 3px solid grey;
   width: 172%;
   position: absolute;
@@ -172,7 +179,7 @@ html {
   left: 113px;
 }
 
-.line2{
+.line2 {
   border: 3px solid grey;
   width: 205%;
   position: absolute;
@@ -182,7 +189,8 @@ html {
 
 
 .products img:hover {
-  transform: scale(1.1); /*Scale the image by 1.1 times when hovered */
+  transform: scale(1.1);
+  /*Scale the image by 1.1 times when hovered */
 }
 
 
@@ -191,7 +199,7 @@ html {
 .products img {
   width: 100px;
   height: 100px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   position: relative;
 }
 
@@ -201,12 +209,12 @@ html {
   color: #AF7800;
 }
 
-h1{
+h1 {
   text-align: center;
   margin-top: 40px;
 }
 
-.main-container{
+.main-container {
   height: 300px;
   width: 1150px;
   background-color: #635633;
@@ -214,7 +222,7 @@ h1{
   margin-top: 100px;
 }
 
-.image-container{
+.image-container {
   height: 400px;
   width: 300px;
   background-color: #A6935F;
@@ -223,28 +231,29 @@ h1{
   margin-left: 100px;
 }
 
-.image-container img{
+.image-container img {
   width: 350px;
   height: auto;
   margin-left: -20px;
   position: relative;
   top: 70px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
-.main-container h2, .main-container p{
+.main-container h2,
+.main-container p {
   margin-left: 380px;
   font-size: 4rem;
   color: white;
   padding-top: 50px;
 }
 
-.main-container p{
+.main-container p {
   font-size: 2rem;
   padding-top: 15px;
 }
 
-.main-container1{
+.main-container1 {
   height: 300px;
   width: 1150px;
   background-color: #626262;
@@ -252,7 +261,7 @@ h1{
   margin-top: -200px;
 }
 
-.image-container1{
+.image-container1 {
   height: 400px;
   width: 300px;
   background-color: #C0C0C0;
@@ -261,29 +270,30 @@ h1{
   margin-left: 53rem;
 }
 
-.image-container1 img{
+.image-container1 img {
   width: 320px;
   height: auto;
   margin-left: -10px;
   position: relative;
   top: 20px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
-.main-container1 h2, .main-container1 p{
+.main-container1 h2,
+.main-container1 p {
   margin-left: 50px;
   font-size: 4rem;
   color: white;
   padding-top: 50px;
 }
 
-.main-container1 p{
+.main-container1 p {
   font-size: 2rem;
   padding-top: 5px;
   max-width: 60%;
 }
 
-.main-container2{
+.main-container2 {
   height: 300px;
   width: 1150px;
   background-color: #6A594C;
@@ -291,7 +301,7 @@ h1{
   margin-top: -250px;
 }
 
-.image-container2{
+.image-container2 {
   height: 400px;
   width: 300px;
   background-color: #B29D8C;
@@ -300,28 +310,29 @@ h1{
   margin-left: 100px;
 }
 
-.image-container2 img{
+.image-container2 img {
   width: 350px;
   height: auto;
   margin-left: -10px;
   position: relative;
   top: 30px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
-.main-container2 h2, .main-container2 p{
+.main-container2 h2,
+.main-container2 p {
   margin-left: 370px;
   font-size: 4rem;
   color: white;
   padding-top: 50px;
 }
 
-.main-container2 p{
+.main-container2 p {
   font-size: 2rem;
   padding-top: 5px;
 }
 
-.main-container3{
+.main-container3 {
   height: 300px;
   width: 1150px;
   background-color: #272A31;
@@ -329,7 +340,7 @@ h1{
   margin-top: -250px;
 }
 
-.image-container3{
+.image-container3 {
   height: 400px;
   width: 300px;
   background-color: #F2E6D8;
@@ -338,110 +349,117 @@ h1{
   margin-left: 53rem;
 }
 
-.image-container3 img{
+.image-container3 img {
   width: 280px;
   height: auto;
   margin-left: 8px;
   position: relative;
   top: 80px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 
-.main-container3 h2, .main-container3 p{
+.main-container3 h2,
+.main-container3 p {
   margin-left: 50px;
   font-size: 4rem;
   color: white;
   padding-top: 50px;
 }
 
-.main-container3 p{
+.main-container3 p {
   font-size: 2rem;
   padding-top: 5px;
   max-width: 60%;
 }
 
 .image-container img:hover {
-  transform: scale(1.1); /* Scale the image by 1.1 times when hovered */
+  transform: scale(1.1);
+  /* Scale the image by 1.1 times when hovered */
 }
 
 .image-container1 img:hover {
-  transform: scale(1.1); /* Scale the image by 1.1 times when hovered */
+  transform: scale(1.1);
+  /* Scale the image by 1.1 times when hovered */
 }
 
 .image-container2 img:hover {
-  transform: scale(1.1); /* Scale the image by 1.1 times when hovered */
+  transform: scale(1.1);
+  /* Scale the image by 1.1 times when hovered */
 }
 
 .image-container3 img:hover {
-  transform: scale(1.1); /* Scale the image by 1.1 times when hovered */
+  transform: scale(1.1);
+  /* Scale the image by 1.1 times when hovered */
 }
 
-footer{
+footer {
   background-color: #F6F6F6;
   height: 200px;
 }
 
 
 
-.logo1{
+.logo1 {
   height: 70px;
   width: 95x;
   display: flex;
   justify-content: center;
   /* align-items: center; */
   margin-top: -250px;
-  
+
 }
 
-.foot h2{
+.foot h2 {
   text-align: center;
   font-size: 2rem;
   margin-top: 20px;
 }
-.contact{
+
+.contact {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
 
-.contact img{
+.contact img {
   height: 30px;
   width: 30px;
 }
-.location{
+
+.location {
   display: flex;
 }
 
-.whatsapp{
+.whatsapp {
   display: flex;
 }
 
-.phone{
+.phone {
   display: flex;
 }
 
-.contact p{
+.contact p {
   margin-top: 5px;
 }
 
-.contact img{
+.contact img {
   vertical-align: middle;
 }
 
-.contact a{
+.contact a {
   text-decoration: none;
   color: black;
   transition: transform 0.3s ease;
-  
+
 }
 
-.contact a:hover{
+.contact a:hover {
   transform: scale(1.1);
 
 }
 
-@media only screen and (max-width: 480px)  {
+@media only screen and (max-width: 480px) {
 
   /* header{
     height: 100%;
@@ -454,13 +472,13 @@ footer{
     width: 100%;
     overflow-x: hidden;
   } */
-  
-  footer{
+
+  footer {
     height: 100%;
     width: 100%;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -471,95 +489,105 @@ footer{
 
   /* Make navbar items stack vertically and center-align */
   .navbar {
-    
-   
-    padding-right: 20px;            /* Remove right padding */
-   
+
+
+    padding-right: 20px;
+    /* Remove right padding */
+
   }
 
-  .navbar li{
+  .navbar li {
     margin-left: 20px;
   }
 
   .navbar a {
-    margin-left: 0;              /* Remove left margin */
-    margin-bottom: 10px;         /* Add margin at the bottom for spacing */
-    font-size: 14px;             /* Adjust font size for better readability */
+    margin-left: 0;
+    /* Remove left margin */
+    margin-bottom: 10px;
+    /* Add margin at the bottom for spacing */
+    font-size: 14px;
+    /* Adjust font size for better readability */
   }
 
   .navbar a:hover {
-    color: #3F9D00;              /* Keep the hover effect intact */
+    color: #3F9D00;
+    /* Keep the hover effect intact */
   }
 
 
-  .front img{
+  .front img {
     position: absolute;
-  width: 85%;
-  height: auto;
-  margin-left: 75px;
-  animation: imageSlide 12s infinite;
+    width: 85%;
+    height: auto;
+    margin-left: 75px;
+    animation: imageSlide 12s infinite;
 
-}
-
-
-.front img:nth-child(1) {
-  animation-delay: 0s;  
-}
-
-.front img:nth-child(2) {
-  animation-delay: 2s;  
-}
-
-.front img:nth-child(3) {
-  animation-delay: 4s; 
-}
-
-.front img:nth-child(4) {
-  animation-delay: 8s; 
-}
-
-
-@keyframes imageSlide {
-  0% {
-    opacity: 0;  
   }
-  25% {
-    opacity: 1;  
+
+
+  .front img:nth-child(1) {
+    animation-delay: 0s;
   }
-  50% {
-    opacity: 0; 
+
+  .front img:nth-child(2) {
+    animation-delay: 2s;
   }
-  100% {
-    opacity: 0;  
+
+  .front img:nth-child(3) {
+    animation-delay: 4s;
   }
-}
+
+  .front img:nth-child(4) {
+    animation-delay: 8s;
+  }
+
+
+  @keyframes imageSlide {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
 
 
 
-  .line-one{
+  .line-one {
     font-size: 15px;
-     /* Adjust the position so it doesn't overlap */
+    /* Adjust the position so it doesn't overlap */
     left: -35px;
-    top: 58%;
+    top: 37%;
     transform: translateY(0);
   }
 
-  .line-two{
+  .line-two {
     font-size: 15px;
-    top: 31%; /* Adjust the position so it doesn't overlap */
+    top: 20%;
+    /* Adjust the position so it doesn't overlap */
     left: -33px;
     transform: translateY(0);
   }
 
-  .content p{
+  .content p {
     font-size: 10px;
-    top: 18%; /* Adjust the position so it doesn't overlap */
+    top: 12%;
+    /* Adjust the position so it doesn't overlap */
     left: -35px;
     transform: translateY(0);
   }
 
- 
-  #img-content{
+
+  #img-content {
     font-size: 14px;
     margin-top: 210px;
     margin-left: 10px;
@@ -570,65 +598,22 @@ footer{
     margin-top: 20px;
   }
 
-  .products > div {
-    margin-bottom: 15px; /* Add spacing between items */
+  .products>div {
+    margin-bottom: 15px;
+    /* Add spacing between items */
   }
 
   .products img {
-    width: 50px; /* Reduce image size */
+    width: 50px;
+    /* Reduce image size */
     height: 50px;
   }
 
-  .line {
-    width: 100%; /* Increase the line width for small screens */
-    left: 97%;    /* Adjust the positioning */
-    top: 23px; 
-    margin: 0px auto;    /* Adjust vertical position */
-   
-  }
 
-  .line1 {
-    width: 73%;  /* Increase the line width for small screens */
-    left: 88%;    /* Adjust the positioning */
-    top: 23px;     /* Adjust vertical position */
-    margin: 0 auto;
-  }
 
+  .line,
+  .line1,
   .line2 {
-    width: 73%;  /* Increase the line width for small screens */
-    left: 104%;    /* Adjust the positioning */
-    top: 23px; 
-    margin: 0 auto;    /* Adjust vertical position */
-  }
-
-
-
-  .line, .line1, .line2 {
-    position: absolute;  /* Absolute positioning to place lines relative to container */
-    height: 2px;         /* Line height */
-    background-color: black;  /* Line color */
-    top: 23px;           /* Positioning the lines vertically */
-  }
-
-  .line {
-    width: 20vw;  /* Set width relative to the viewport width */
-    left: 97%;    /* Position the line near the last image */
-    transform: translateX(-50%);  /* Center the line horizontally */
-  }
-
-  .line1 {
-    width: 15vw;  /* Set width relative to the viewport width */
-    left: 88%;    /* Position the line near the first image */
-    transform: translateX(-50%);  /* Center the line horizontally */
-  }
-
-  .line2 {
-    width: 15vw;  /* Set width relative to the viewport width */
-    left: 104%;   /* Position the line near the second image */
-    transform: translateX(-50%);  /* Center the line horizontally */
-  }
-
-  .line, .line1, .line2{
     display: none;
   }
 
@@ -636,10 +621,11 @@ footer{
 
 
   .almira {
-    font-size: 13px; /* Adjust font size for smaller screens */
+    font-size: 13px;
+    /* Adjust font size for smaller screens */
   }
 
-  
+
 
   .main-container,
   .main-container1,
@@ -676,7 +662,8 @@ footer{
   .main-container2 h2,
   .main-container3 h2 {
     margin-left: 0px;
-    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    font-size: 1.2rem;
+    /* Reduce font size for smaller screens */
     text-align: center;
   }
 
@@ -686,8 +673,9 @@ footer{
   .main-container3 p {
     margin-left: 8px;
     margin-top: -1px;
-    font-size: 0.9rem; 
-    text-align: center;/* Reduce font size for smaller screens */
+    font-size: 0.9rem;
+    text-align: center;
+    /* Reduce font size for smaller screens */
   }
 
   /* Adjust padding-top for better spacing on small screens */
@@ -710,61 +698,63 @@ footer{
   .image-container1 img:hover,
   .image-container2 img:hover,
   .image-container3 img:hover {
-    transform: scale(1.05); /* Slightly less scaling for small screens */
+    transform: scale(1.05);
+    /* Slightly less scaling for small screens */
   }
 
-  .main-container1 p, .main-container3 p{
+  .main-container1 p,
+  .main-container3 p {
     max-width: 100%;
   }
 
-  .image-container2{
+  .image-container2 {
     height: 275px;
   }
 
-  .image-container3{
+  .image-container3 {
     height: 220px;
   }
 
-  .image-container2 img{
+  .image-container2 img {
     top: 10px;
   }
 
-  .image-container3 img{
+  .image-container3 img {
     top: -10px;
   }
 
-  .image-container1 img{
+  .image-container1 img {
     width: 60%;
     margin-left: 70px;
   }
 
-  .logo1{
+  .logo1 {
     margin-top: 90px;
   }
 
-  .contact{
+  .contact {
     margin-bottom: 50px;
   }
 
-  .contact a{
+  .contact a {
     font-size: 9px;
   }
 
-  .contact img{
+  .contact img {
     height: 18px;
     width: 18px;
   }
 
-  .foot h2{
+  .foot h2 {
     font-size: 1.3rem;
   }
-  
+
 
 
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 767px)  {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
 
   /* header{
     height: 100%;
@@ -777,13 +767,13 @@ footer{
     width: 100%;
     overflow-x: hidden;
   } */
-  
-  footer{
+
+  footer {
     height: 100%;
     width: 100%;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -794,94 +784,105 @@ footer{
 
   /* Make navbar items stack vertically and center-align */
   .navbar {
-    
-   
-    padding-right: 50px;            /* Remove right padding */
-   
+
+
+    padding-right: 50px;
+    /* Remove right padding */
+
   }
 
-  .navbar li{
+  .navbar li {
     margin-left: 50px;
   }
 
   .navbar a {
-    margin-left: 0;              /* Remove left margin */
-    margin-bottom: 10px;         /* Add margin at the bottom for spacing */
-    font-size: 14px;             /* Adjust font size for better readability */
+    margin-left: 0;
+    /* Remove left margin */
+    margin-bottom: 10px;
+    /* Add margin at the bottom for spacing */
+    font-size: 14px;
+    /* Adjust font size for better readability */
   }
 
   .navbar a:hover {
-    color: #3F9D00;              /* Keep the hover effect intact */
+    color: #3F9D00;
+    /* Keep the hover effect intact */
   }
 
 
-  .front img{
+  .front img {
     position: absolute;
-  width: 85%;
-  height: auto;
-  margin-left: 111px;
-  animation: imageSlide 12s infinite;
+    width: 85%;
+    height: auto;
+    margin-left: 111px;
+    animation: imageSlide 12s infinite;
 
-}
-
-
-.front img:nth-child(1) {
-  animation-delay: 0s;  
-}
-
-.front img:nth-child(2) {
-  animation-delay: 2s;  
-}
-
-.front img:nth-child(3) {
-  animation-delay: 4s; 
-}
-
-.front img:nth-child(4) {
-  animation-delay: 8s; 
-}
-
-
-@keyframes imageSlide {
-  0% {
-    opacity: 0;  
   }
-  25% {
-    opacity: 1;  
+
+
+  .front img:nth-child(1) {
+    animation-delay: 0s;
   }
-  50% {
-    opacity: 0; 
+
+  .front img:nth-child(2) {
+    animation-delay: 2s;
   }
-  100% {
-    opacity: 0;  
+
+  .front img:nth-child(3) {
+    animation-delay: 4s;
   }
-}
+
+  .front img:nth-child(4) {
+    animation-delay: 8s;
+  }
+
+
+  @keyframes imageSlide {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
 
 
 
-  .line-one{
+  .line-one {
     font-size: 22px;
-    top: 60%; /* Adjust the position so it doesn't overlap */
+    top: 60%;
+    /* Adjust the position so it doesn't overlap */
     left: 0px;
     transform: translateY(0);
   }
 
-  .line-two{
+  .line-two {
     font-size: 22px;
-    top: 37%; /* Adjust the position so it doesn't overlap */
+    top: 37%;
+    /* Adjust the position so it doesn't overlap */
     left: 0px;
     transform: translateY(0);
   }
 
-  .content p{
+  .content p {
     font-size: 18px;
-    top: 28%; /* Adjust the position so it doesn't overlap */
+    top: 28%;
+    /* Adjust the position so it doesn't overlap */
     left: 0px;
     transform: translateY(0);
   }
 
- 
-  #img-content{
+
+  #img-content {
     font-size: 14px;
     margin-top: 22rem;
     margin-left: 10px;
@@ -893,35 +894,38 @@ footer{
     margin-top: 20px;
   }
 
-  .products > div {
-    margin-bottom: 15px; /* Add spacing between items */
+  .products>div {
+    margin-bottom: 15px;
+    /* Add spacing between items */
   }
 
   .products img {
-    width: 65px; /* Reduce image size */
+    width: 65px;
+    /* Reduce image size */
     height: 65px;
   }
 
-  .line{
+  .line {
     left: 95%;
     top: 40%;
     width: 85%;
   }
 
-  .line1{
+  .line1 {
     left: 95%;
     top: 40%;
     width: 80%;
   }
 
-  .line2{
+  .line2 {
     left: 100%;
     top: 40%;
     width: 75%;
   }
 
   .almira {
-    font-size: 13px; /* Adjust font size for smaller screens */
+    font-size: 13px;
+    /* Adjust font size for smaller screens */
   }
 
   .main-container,
@@ -961,7 +965,8 @@ footer{
   .main-container2 h2,
   .main-container3 h2 {
     margin-left: 0px;
-    font-size: 1.8rem; /* Reduce font size for smaller screens */
+    font-size: 1.8rem;
+    /* Reduce font size for smaller screens */
   }
 
   .main-container p,
@@ -969,7 +974,8 @@ footer{
   .main-container2 p,
   .main-container3 p {
     margin-left: 0px;
-    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    font-size: 1.2rem;
+    /* Reduce font size for smaller screens */
   }
 
   /* Adjust padding-top for better spacing on small screens */
@@ -977,7 +983,7 @@ footer{
   .main-container1 h2,
   .main-container2 h2,
   .main-container3 h2 {
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   .main-container p,
@@ -992,68 +998,77 @@ footer{
   .image-container1 img:hover,
   .image-container2 img:hover,
   .image-container3 img:hover {
-    transform: scale(1.05); /* Slightly less scaling for small screens */
+    transform: scale(1.05);
+    /* Slightly less scaling for small screens */
   }
 
-  .main-container1 p, .main-container3 p{
+  .main-container1 p,
+  .main-container3 p {
     max-width: 100%;
   }
 
-  .image-container2{
+  .image-container2 {
     height: 275px;
   }
 
-  .image-container3{
+  .image-container3 {
     height: 220px;
   }
 
-  .image-container1, .image-container3{
+  .image-container1,
+  .image-container3 {
     position: relative;
     left: 66%;
   }
 
-  .main-container1 h2, .main-container1 p, .main-container3 h2, .main-container3 p{
+  .main-container1 h2,
+  .main-container1 p,
+  .main-container3 h2,
+  .main-container3 p {
     margin-left: 25px;
     max-width: 60%;
   }
 
-  .image-container2 img{
+  .image-container2 img {
     top: 10px;
   }
 
-  .image-container3 img{
+  .image-container3 img {
     top: -10px;
   }
 
-  .main-container h2, .main-container p, .main-container2 h2, .main-container2 p{
+  .main-container h2,
+  .main-container p,
+  .main-container2 h2,
+  .main-container2 p {
     position: relative;
     left: 35%;
     max-width: 60%;
   }
 
-  .logo1{
+  .logo1 {
     margin-top: 90px;
   }
 
-  .contact{
+  .contact {
     margin-bottom: 50px;
+  }
+
+  .contact a {
+    font-size: 10px;
+  }
+
+  .contact img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .foot h2 {
+    font-size: 1.2rem;
+  }
 }
 
-.contact a{
-  font-size: 10px;
-}
-
-.contact img{
-  height: 30px;
-  width: 30px;
-}
-
-.foot h2{
-  font-size: 1.2rem;
-}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   /* header{
     height: 100%;
@@ -1066,13 +1081,13 @@ footer{
     width: 100%;
     overflow-x: hidden;
   } */
-  
-  footer{
+
+  footer {
     height: 100%;
     width: 100%;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -1083,94 +1098,105 @@ footer{
 
   /* Make navbar items stack vertically and center-align */
   .navbar {
-    
-   
-    padding-right: 50px;            /* Remove right padding */
-   
+
+
+    padding-right: 50px;
+    /* Remove right padding */
+
   }
 
-  .navbar li{
+  .navbar li {
     margin-left: 50px;
   }
 
   .navbar a {
-    margin-left: 0;              /* Remove left margin */
-    margin-bottom: 10px;         /* Add margin at the bottom for spacing */
-    font-size: 14px;             /* Adjust font size for better readability */
+    margin-left: 0;
+    /* Remove left margin */
+    margin-bottom: 10px;
+    /* Add margin at the bottom for spacing */
+    font-size: 14px;
+    /* Adjust font size for better readability */
   }
 
   .navbar a:hover {
-    color: #3F9D00;              /* Keep the hover effect intact */
+    color: #3F9D00;
+    /* Keep the hover effect intact */
   }
 
 
-  .front img{
+  .front img {
     position: absolute;
-  width: 85%;
-  height: auto;
-  margin-left: 175px;
-  animation: imageSlide 12s infinite;
+    width: 85%;
+    height: auto;
+    margin-left: 175px;
+    animation: imageSlide 12s infinite;
 
-}
-
-
-.front img:nth-child(1) {
-  animation-delay: 0s;  
-}
-
-.front img:nth-child(2) {
-  animation-delay: 2s;  
-}
-
-.front img:nth-child(3) {
-  animation-delay: 4s; 
-}
-
-.front img:nth-child(4) {
-  animation-delay: 8s; 
-}
-
-
-@keyframes imageSlide {
-  0% {
-    opacity: 0;  
   }
-  25% {
-    opacity: 1;  
+
+
+  .front img:nth-child(1) {
+    animation-delay: 0s;
   }
-  50% {
-    opacity: 0; 
+
+  .front img:nth-child(2) {
+    animation-delay: 2s;
   }
-  100% {
-    opacity: 0;  
+
+  .front img:nth-child(3) {
+    animation-delay: 4s;
   }
-}
+
+  .front img:nth-child(4) {
+    animation-delay: 8s;
+  }
+
+
+  @keyframes imageSlide {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
 
 
 
-  .line-one{
+  .line-one {
     font-size: 26px;
-    top: 65%; /* Adjust the position so it doesn't overlap */
+    top: 65%;
+    /* Adjust the position so it doesn't overlap */
     left: 0px;
     transform: translateY(0);
   }
 
-  .line-two{
+  .line-two {
     font-size: 26px;
-    top: 44%; /* Adjust the position so it doesn't overlap */
+    top: 44%;
+    /* Adjust the position so it doesn't overlap */
     left: 0px;
     transform: translateY(0);
   }
 
-  .content p{
+  .content p {
     font-size: 20px;
-    top: 37%; /* Adjust the position so it doesn't overlap */
+    top: 37%;
+    /* Adjust the position so it doesn't overlap */
     left: 0px;
     transform: translateY(0);
   }
 
- 
-  #img-content{
+
+  #img-content {
     font-size: 15px;
     margin-top: 450px;
     margin-left: 10px;
@@ -1181,23 +1207,29 @@ footer{
     margin-top: 20px;
   }
 
-  .products > div {
-    margin-bottom: 15px; /* Add spacing between items */
+  .products>div {
+    margin-bottom: 15px;
+    /* Add spacing between items */
   }
 
   .products img {
-    width: 90px; /* Reduce image size */
+    width: 90px;
+    /* Reduce image size */
     height: 90px;
   }
 
   .almira {
-    font-size: 17px; /* Adjust font size for smaller screens */
+    font-size: 17px;
+    /* Adjust font size for smaller screens */
   }
 
-  .products > div:not(:last-child)::after {
-    left: 100%; /* Adjust line position for center alignment */
-    bottom: 56%; /* Adjust line position relative to text */
-    transform: translateX(0); /* Center the line */
+  .products>div:not(:last-child)::after {
+    left: 100%;
+    /* Adjust line position for center alignment */
+    bottom: 56%;
+    /* Adjust line position relative to text */
+    transform: translateX(0);
+    /* Center the line */
     width: calc(90px + 20px);
   }
 
@@ -1238,7 +1270,8 @@ footer{
   .main-container2 h2,
   .main-container3 h2 {
     margin-left: 0px;
-    font-size: 2rem; /* Reduce font size for smaller screens */
+    font-size: 2rem;
+    /* Reduce font size for smaller screens */
   }
 
   .main-container p,
@@ -1246,7 +1279,8 @@ footer{
   .main-container2 p,
   .main-container3 p {
     margin-left: 0px;
-    font-size: 1.4rem; /* Reduce font size for smaller screens */
+    font-size: 1.4rem;
+    /* Reduce font size for smaller screens */
   }
 
   /* Adjust padding-top for better spacing on small screens */
@@ -1269,42 +1303,51 @@ footer{
   .image-container1 img:hover,
   .image-container2 img:hover,
   .image-container3 img:hover {
-    transform: scale(1.05); /* Slightly less scaling for small screens */
+    transform: scale(1.05);
+    /* Slightly less scaling for small screens */
   }
 
-  .main-container1 p, .main-container3 p{
+  .main-container1 p,
+  .main-container3 p {
     max-width: 100%;
   }
 
-  .image-container3{
+  .image-container3 {
     height: 265px;
   }
 
-  .image-container1, .image-container3{
+  .image-container1,
+  .image-container3 {
     position: relative;
     left: 66%;
   }
 
-  .main-container1 h2, .main-container1 p, .main-container3 h2, .main-container3 p{
+  .main-container1 h2,
+  .main-container1 p,
+  .main-container3 h2,
+  .main-container3 p {
     margin-left: 25px;
     max-width: 60%;
   }
 
-  .image-container2 img{
+  .image-container2 img {
     top: 10px;
   }
 
-  .image-container2{
+  .image-container2 {
     height: 300px;
   }
 
-  .image-container3 img{
+  .image-container3 img {
     top: -10px;
     width: 95%;
     left: 6%;
   }
 
-  .main-container h2, .main-container p, .main-container2 h2, .main-container2 p{
+  .main-container h2,
+  .main-container p,
+  .main-container2 h2,
+  .main-container2 p {
     position: relative;
     left: 35%;
     max-width: 60%;
@@ -1312,61 +1355,74 @@ footer{
 
 
 
-  .logo1{
+  .logo1 {
     margin-top: 90px;
   }
 
-  .contact{
+  .contact {
     margin-bottom: 50px;
 
 
-}
+  }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px){
-  body{
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  body {
     overflow-x: hidden;
   }
 
-  .main-container, .main-container2, .main-container3{
+  .main-container,
+  .main-container2,
+  .main-container3 {
     max-width: 92%;
   }
 
-  .main-container2 h2{
+  .main-container2 h2 {
     padding-top: 25px;
   }
 
-  .main-container1{
+  .main-container1 {
     max-width: 95%;
   }
 
-  .main-container h2, .main-container1 h2, .main-container2 h2 .main-container3 h2{
+  .main-container h2,
+  .main-container1 h2,
+  .main-container2 h2, .main-container3 h2 {
     font-size: 2.8rem;
   }
 
-  .main-container p, .main-container1 p, .main-container2 p .main-container3 p{
+  .main-container p,
+  .main-container1 p,
+  .main-container2 p, .main-container3 p {
     max-width: 51%;
     font-size: 2rem;
     padding-top: 0px;
   }
 
-  .image-container1, .image-container3{
+  .image-container1,
+  .image-container3 {
     margin-left: 650px;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 715px){
+@media only screen and (min-width: 481px) and (max-width: 715px) {
   .front {
-    flex-direction: column; /* Stack images and content vertically */
-    align-items: center; /* Center content and images */
+    flex-direction: column;
+    /* Stack images and content vertically */
+    align-items: center;
+    /* Center content and images */
   }
 
   .front img {
-    position: absolute; /* Use relative positioning for responsive images */
-    margin-left: 135px; /* Reset margin-left to avoid cutting off images */
-    width: 80%; /* Make images smaller to fit better on mobile */
-    height: auto; /* Maintain aspect ratio */
-    
+    position: absolute;
+    /* Use relative positioning for responsive images */
+    margin-left: 135px;
+    /* Reset margin-left to avoid cutting off images */
+    width: 80%;
+    /* Make images smaller to fit better on mobile */
+    height: auto;
+    /* Maintain aspect ratio */
+
     animation: imageSlide 12s infinite;
   }
 
@@ -1375,190 +1431,184 @@ footer{
     top: 59%;
     left: -15px;
     transform: translateY(0);
-}
-
-.line-two {
-  font-size: 16px;
-  top: 33%;
-  left: -13px;
-  transform: translateY(0);
-}
-
-.content p {
-  font-size: 14px;
-  top: 21%;
-  left: -16px;
-  transform: translateY(0);
-}
-
-#img-content{
-  margin-top: 18rem;
-}
-
-  
-
-  .front img:nth-child(1) {
-    animation-delay: 0s;  
-  }
-  
-  .front img:nth-child(2) {
-    animation-delay: 2s;  
-  }
-  
-  .front img:nth-child(3) {
-    animation-delay: 4s; 
-  }
-  
-  .front img:nth-child(4) {
-    animation-delay: 8s; 
-  }
-  
-  
-  @keyframes imageSlide {
-    0% {
-      opacity: 0;  
-    }
-    25% {
-      opacity: 1;  
-    }
-    50% {
-      opacity: 0; 
-    }
-    100% {
-      opacity: 0;  
-    }
   }
 
-}
-
-
-
-@media only screen and (max-width: 300px){
-  .front img{
-    margin-left: 65px;
-  }
-
-  
-
-  .line-one{
-    font-size: 8px;
-     /* Adjust the position so it doesn't overlap */
-    left: -35px;
-    top: 58%;
+  .line-two {
+    font-size: 16px;
+    top: 33%;
+    left: -13px;
     transform: translateY(0);
   }
 
-  .line-two{
+  .content p {
+    font-size: 14px;
+    top: 21%;
+    left: -16px;
+    transform: translateY(0);
+  }
+
+  #img-content {
+    margin-top: 18rem;
+  }
+
+
+
+  .front img:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .front img:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  .front img:nth-child(3) {
+    animation-delay: 4s;
+  }
+
+  .front img:nth-child(4) {
+    animation-delay: 8s;
+  }
+
+
+  @keyframes imageSlide {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 300px) {
+  .front img {
+    margin-left: 65px;
+  }
+
+
+
+  .line-one {
     font-size: 8px;
-    top: -52%; /* Adjust the position so it doesn't overlap */
+    /* Adjust the position so it doesn't overlap */
+    left: -35px;
+    top: 56%;
+    transform: translateY(0);
+  }
+
+  .line-two {
+    font-size: 8px;
+    top: 26%;
+    /* Adjust the position so it doesn't overlap */
     left: -33px;
     transform: translateY(0);
   }
 
-  .content p{
+  .content p {
     font-size: 10px;
-    top: 8%; /* Adjust the position so it doesn't overlap */
+    top: 9%;
+    /* Adjust the position so it doesn't overlap */
     left: -37px;
     transform: translateY(0);
   }
 
-  .line-one{
-    margin-top: -16rem;
-  }
 
-  .line-two{
-    margin-top: 26.5rem;
-  }
-  #img-content{
+
+  #img-content {
     margin-top: 140px;
   }
 }
 
-@media only screen and (min-width: 301px) and (max-width: 400px){
-  .front img{
+@media only screen and (min-width: 301px) and (max-width: 400px) {
+  .front img {
     margin-left: 55px;
   }
 
-  .line-one, .line-two{
+  .line-one,
+  .line-two {
     font-size: 10px;
   }
 
-  .content p{
-    margin-top: 37rem;
-  }
-  .line-one{
+  .line-one {
     /* font-size: 15px; */
-     /* Adjust the position so it doesn't overlap */
+    /* Adjust the position so it doesn't overlap */
     left: -35px;
-    top: 58%;
+    top: 57%;
     transform: translateY(0);
   }
 
-  .line-two{
+  .line-two {
     /* font-size: 15px; */
-    top: -52%; /* Adjust the position so it doesn't overlap */
+    top: 28%;
+    /* Adjust the position so it doesn't overlap */
     left: -33px;
     transform: translateY(0);
   }
 
-  .content p{
+  .content p {
     font-size: 10px;
-    top: -70%; /* Adjust the position so it doesn't overlap */
-    left: -35px;
+    top: 12%;
+    /* Adjust the position so it doesn't overlap */
+    left: -36px;
     transform: translateY(0);
   }
-
-  
-
-  .line-two{
-    margin-top: 28rem;
-  }
-  #img-content{
+ 
+  #img-content {
     margin-top: 165px;
   }
 }
 
 
-@media only screen and (min-width: 765px) and (max-width: 900px){
-  .front img{
+@media only screen and (min-width: 765px) and (max-width: 900px) {
+  .front img {
     margin-left: 125px;
   }
 
-  #img-content{
+  #img-content {
     margin-top: 400px;
   }
 }
 
 
-@media only screen and (min-width: 1441px){
-  header{
+@media only screen and (min-width: 1441px) {
+  header {
     height: 100%;
     width: 100%;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 
- 
 
-  main{
+
+  main {
     height: 100%;
     width: 100%;
-   
+
   }
 
   footer {
     height: 100%;
-    width:100%;
+    width: 100%;
   }
 
-  .front img{
+  .front img {
     height: auto;
   }
 
-  #img-content{
+  #img-content {
     margin-top: 70rem;
   }
 }
-
