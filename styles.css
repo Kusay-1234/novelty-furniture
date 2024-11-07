@@ -131,6 +131,8 @@ html {
   margin-top: 31rem;
   font-size: 1.5rem;
   margin-left: 30px;
+  color: #5a5353;
+  text-align: center;
 }
 
 
@@ -212,6 +214,7 @@ html {
 h1 {
   text-align: center;
   margin-top: 40px;
+  color: #012B00;
 }
 
 .main-container {
@@ -395,7 +398,8 @@ h1 {
 
 footer {
   background-color: #F6F6F6;
-  height: 200px;
+  height: 250px;
+  margin-bottom: 100px;
 }
 
 
@@ -457,6 +461,17 @@ footer {
 .contact a:hover {
   transform: scale(1.1);
 
+}
+
+.ak-digital {
+  text-align: center;
+  color: gray;
+  margin-top: 40px;
+}
+
+.ak-digital a{
+  color: gray;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 480px) {
@@ -564,33 +579,25 @@ footer {
 
   .line-one {
     font-size: 15px;
-    /* Adjust the position so it doesn't overlap */
-    left: -35px;
-
-    top: 37%;/*local change*/
-
+    margin-top: -170px;
+    margin-left: 25px;
   
     transform: translateY(0);
   }
 
   .line-two {
     font-size: 15px;
-    top: 20%; /*l;ocal change*/
-    
-
-    left: -33px;
+  margin-top: -4rem;
+  margin-left: 1.5rem;
     transform: translateY(0);
   }
 
   .content p {
     font-size: 10px;
+    margin-top: -3px;
+    margin-left: 25px;
 
-    top: 12%;/*local change*/
-    /* Adjust the position so it doesn't overlap */
-
-
-
-    left: -35px;
+  
     transform: translateY(0);
   }
 
@@ -616,17 +623,6 @@ footer {
     /* Reduce image size */
     height: 50px;
   }
-
-
-
-  .line,
-  .line1,
-  .line2 {
-    display: none;
-  }
-
-
-
 
   .almira {
     font-size: 13px;
@@ -681,7 +677,7 @@ footer {
   .main-container3 p {
     margin-left: 8px;
     margin-top: -1px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     /* Reduce font size for smaller screens */
   }
@@ -698,7 +694,8 @@ footer {
   .main-container1 p,
   .main-container2 p,
   .main-container3 p {
-    padding-top: 0px;
+    padding-top: 3px;
+    padding-bottom: 20px;
   }
 
   /* Adjust hover effects for images on smaller screens */
@@ -866,26 +863,26 @@ footer {
 
 
   .line-one {
-    font-size: 22px;
-    top: 60%;
-    /* Adjust the position so it doesn't overlap */
-    left: 0px;
+    font-size: 18px;
+    margin-top: 8rem;
+    margin-left: -13rem;
+    
     transform: translateY(0);
   }
 
   .line-two {
-    font-size: 22px;
-    top: 37%;
-    /* Adjust the position so it doesn't overlap */
-    left: 0px;
+    font-size: 18px;
+    margin-top: 16rem;
+    margin-left: -13rem;
+ 
     transform: translateY(0);
   }
 
   .content p {
-    font-size: 18px;
-    top: 28%;
-    /* Adjust the position so it doesn't overlap */
-    left: 0px;
+    font-size: 15px;
+    margin-top: 21rem;
+    margin-left: -13rem;
+   
     transform: translateY(0);
   }
 
@@ -1181,25 +1178,20 @@ footer {
 
   .line-one {
     font-size: 26px;
-    top: 65%;
-    /* Adjust the position so it doesn't overlap */
-    left: 0px;
+  
     transform: translateY(0);
   }
 
   .line-two {
     font-size: 26px;
-    top: 44%;
-    /* Adjust the position so it doesn't overlap */
-    left: 0px;
+    margin-top: -60px;
+    
     transform: translateY(0);
   }
 
   .content p {
     font-size: 20px;
-    top: 37%;
-    /* Adjust the position so it doesn't overlap */
-    left: 0px;
+   margin-top: 45px;
     transform: translateY(0);
   }
 
@@ -1430,30 +1422,10 @@ footer {
     /* Make images smaller to fit better on mobile */
     height: auto;
     /* Maintain aspect ratio */
-
     animation: imageSlide 12s infinite;
   }
 
-  .line-one {
-    font-size: 16px;
-    top: 59%;
-    left: -15px;
-    transform: translateY(0);
-  }
 
-  .line-two {
-    font-size: 16px;
-    top: 33%;
-    left: -13px;
-    transform: translateY(0);
-  }
-
-  .content p {
-    font-size: 14px;
-    top: 21%;
-    left: -16px;
-    transform: translateY(0);
-  }
 
   #img-content {
     margin-top: 18rem;
@@ -1496,7 +1468,29 @@ footer {
     }
   }
 
+
+
 }
+
+@media only screen and (min-width: 716px) and (max-width: 767px) {
+  .line-one{
+    font-size: 18px;
+    margin-top: -14rem;
+    margin-left: 2rem;
+  }
+  
+  .line-two{
+    font-size: 18px;
+    margin-top: -6rem;
+    margin-left: 1.9rem;
+}
+
+.content p{
+  font-size: 15px;
+        margin-top: -1rem;
+        margin-left: 1.9rem;
+}
+  }
 
 
 
@@ -1505,34 +1499,19 @@ footer {
     margin-left: 65px;
   }
 
-
-
-  .line-one {
+  .line-one{
     font-size: 8px;
-    /* Adjust the position so it doesn't overlap */
-    left: -35px;
-    top: 56%;
-    transform: translateY(0);
   }
 
-  .line-two {
+  .line-two{
     font-size: 8px;
-    top: 26%;
-    /* Adjust the position so it doesn't overlap */
-    left: -33px;
-    transform: translateY(0);
+    margin-top: -114px;
   }
 
-  .content p {
-    font-size: 10px;
-    top: 9%;
-    /* Adjust the position so it doesn't overlap */
-    left: -37px;
-    transform: translateY(0);
+  .content p{
+    font-size: 7px;
+    margin-top: -80px;
   }
-
-
-
   #img-content {
     margin-top: 140px;
   }
@@ -1548,29 +1527,15 @@ footer {
     font-size: 10px;
   }
 
-  .line-one {
-    /* font-size: 15px; */
-    /* Adjust the position so it doesn't overlap */
-    left: -35px;
-    top: 57%;
-    transform: translateY(0);
+  .line-two{
+    margin-top: -100px;
   }
 
-  .line-two {
-    /* font-size: 15px; */
-    top: 28%;
-    /* Adjust the position so it doesn't overlap */
-    left: -33px;
-    transform: translateY(0);
+  .content p{
+    margin-top: -55px;
   }
 
-  .content p {
-    font-size: 10px;
-    top: 12%;
-    /* Adjust the position so it doesn't overlap */
-    left: -36px;
-    transform: translateY(0);
-  }
+
  
   #img-content {
     margin-top: 165px;
@@ -1620,3 +1585,70 @@ footer {
     margin-top: 70rem;
   }
 }
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+  .line, .line1, .line2{
+    display: none;
+  }
+  
+}
+
+
+@media only screen and (min-width: 970px) and (max-width: 1024px){
+  .line{
+    left: 95%;
+    top: 40%;
+    width: 180%;
+  }
+
+  .line1{
+    left: 95%;
+    top: 40%;
+    width: 170%;
+  }
+
+  .line2{
+    left: 95%;
+    top: 40%;
+    width: 170%;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 969px) {
+  .line, .line1, .line2{
+    display: none;
+  }
+  
+}
+
+@media only screen and (max-width: 429px) {
+  .line, .line1, .line2{
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 430px) and (max-width: 480px){
+  .line{
+    left: 95%;
+    top: 40%;
+    width: 180%;
+    border: 1px solid grey;
+  }
+
+  .line1{
+    left: 95%;
+    top: 40%;
+    width: 170%;
+  }
+
+  .line2{
+    left: 95%;
+    top: 40%;
+    width: 170%;
+  }
+}
+
+
+
