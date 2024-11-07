@@ -20,8 +20,8 @@ html {
 }
 
 .logo img {
-  height: 70px;
-  width: 95px;
+  height: 75px;
+  width: 130px;
 }
 
 .navbar {
@@ -472,8 +472,8 @@ footer {
   }
 
   .logo img {
-    height: 50px;
-    width: 70px;
+    height: 60px;
+    width: 85px;
   }
 
   /* Make navbar items stack vertically and center-align */
@@ -739,8 +739,8 @@ footer {
   }
 
   .logo img {
-    height: 50px;
-    width: 70px;
+    height: 60px;
+    width: 90px;
   }
 
   /* Make navbar items stack vertically and center-align */
@@ -1034,8 +1034,8 @@ footer {
   }
 
   .logo img {
-    height: 50px;
-    width: 70px;
+    height: 60px;
+    width: 100px;
   }
 
   /* Make navbar items stack vertically and center-align */
