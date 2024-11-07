@@ -45,7 +45,7 @@ html {
 .front {
   display: flex;
   justify-content: space-evenly;
-  /* position: relative; */
+  
 }
 
 .front img {
@@ -149,20 +149,6 @@ html {
   align-items: center;
   position: relative;
 }
-
-
-/* .products > div:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 50%; 
-  left: 100%; 
-  width: 205px;
-  height: 4.5px; 
-  background-color: grey; 
-  transform: translateY(-50%);
-
-} */
-
 
 
 .line {
@@ -409,7 +395,6 @@ footer {
   width: 95x;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   margin-top: -250px;
 
 }
@@ -476,17 +461,6 @@ footer {
 
 @media only screen and (max-width: 480px) {
 
-  /* header{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  main{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  } */
 
   footer {
     height: 100%;
@@ -504,11 +478,8 @@ footer {
 
   /* Make navbar items stack vertically and center-align */
   .navbar {
-
-
     padding-right: 20px;
     /* Remove right padding */
-
   }
 
   .navbar li {
@@ -581,14 +552,13 @@ footer {
     font-size: 15px;
     margin-top: -170px;
     margin-left: 25px;
-  
     transform: translateY(0);
   }
 
   .line-two {
     font-size: 15px;
-  margin-top: -4rem;
-  margin-left: 1.5rem;
+    margin-top: -4rem;
+    margin-left: 1.5rem;
     transform: translateY(0);
   }
 
@@ -596,8 +566,6 @@ footer {
     font-size: 10px;
     margin-top: -3px;
     margin-left: 25px;
-
-  
     transform: translateY(0);
   }
 
@@ -761,18 +729,6 @@ footer {
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
-  /* header{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  main{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  } */
-
   footer {
     height: 100%;
     width: 100%;
@@ -789,11 +745,8 @@ footer {
 
   /* Make navbar items stack vertically and center-align */
   .navbar {
-
-
     padding-right: 50px;
     /* Remove right padding */
-
   }
 
   .navbar li {
@@ -865,8 +818,7 @@ footer {
   .line-one {
     font-size: 18px;
     margin-top: 8rem;
-    margin-left: -13rem;
-    
+    margin-left: -13rem;  
     transform: translateY(0);
   }
 
@@ -874,7 +826,6 @@ footer {
     font-size: 18px;
     margin-top: 16rem;
     margin-left: -13rem;
- 
     transform: translateY(0);
   }
 
@@ -882,7 +833,6 @@ footer {
     font-size: 15px;
     margin-top: 21rem;
     margin-left: -13rem;
-   
     transform: translateY(0);
   }
 
@@ -891,7 +841,6 @@ footer {
     font-size: 14px;
     margin-top: 22rem;
     margin-left: 10px;
-    /* transform: translateY(0); */
     position: relative;
   }
 
@@ -1075,18 +1024,6 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-  /* header{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  main{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  } */
-
   footer {
     height: 100%;
     width: 100%;
@@ -1103,11 +1040,8 @@ footer {
 
   /* Make navbar items stack vertically and center-align */
   .navbar {
-
-
     padding-right: 50px;
     /* Remove right padding */
-
   }
 
   .navbar li {
@@ -1178,14 +1112,12 @@ footer {
 
   .line-one {
     font-size: 26px;
-  
     transform: translateY(0);
   }
 
   .line-two {
     font-size: 26px;
     margin-top: -60px;
-    
     transform: translateY(0);
   }
 
@@ -1353,16 +1285,12 @@ footer {
     max-width: 60%;
   }
 
-
-
   .logo1 {
     margin-top: 90px;
   }
 
   .contact {
     margin-bottom: 50px;
-
-
   }
 }
 
@@ -1375,14 +1303,12 @@ footer {
     width: 175%;
   }
 
-
   .line1{
     width: 128%;
   }
 
   .line2{
     width: 145%;
-
   }
 
   .main-container,
@@ -1439,13 +1365,9 @@ footer {
     animation: imageSlide 12s infinite;
   }
 
-
-
   #img-content {
     margin-top: 18rem;
   }
-
-
 
   .front img:nth-child(1) {
     animation-delay: 0s;
@@ -1481,9 +1403,6 @@ footer {
       opacity: 0;
     }
   }
-
-
-
 }
 
 @media only screen and (min-width: 716px) and (max-width: 767px) {
