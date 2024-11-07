@@ -1371,6 +1371,20 @@ footer {
     overflow-x: hidden;
   }
 
+  .line{
+    width: 175%;
+  }
+
+
+  .line1{
+    width: 128%;
+  }
+
+  .line2{
+    width: 145%;
+
+  }
+
   .main-container,
   .main-container2,
   .main-container3 {
@@ -1564,6 +1578,10 @@ footer {
     overflow-x: hidden;
   }
 
+  .line, .line1, .line2{
+    display: none;
+  }
+
 
 
   main {
@@ -1629,24 +1647,26 @@ footer {
   
 }
 
-@media only screen and (min-width: 430px) and (max-width: 480px){
+@media only screen and (min-width: 428px) and (max-width: 480px){
   .line{
     left: 95%;
     top: 40%;
-    width: 180%;
+    width: 124%;
     border: 1px solid grey;
   }
 
   .line1{
-    left: 95%;
+    left: 83%;
     top: 40%;
-    width: 170%;
+    width: 88%;
+    border: 1px solid grey;
   }
 
   .line2{
-    left: 95%;
+    left: 101%;
     top: 40%;
-    width: 170%;
+    width: 95%;
+    border: 1px solid grey;
   }
 }
 
