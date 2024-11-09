@@ -540,20 +540,20 @@ footer{
     font-size: 15px;
      /* Adjust the position so it doesn't overlap */
     left: -35px;
-    top: 58%;
+    top: 44%;
     transform: translateY(0);
   }
 
   .line-two{
     font-size: 15px;
-    top: 31%; /* Adjust the position so it doesn't overlap */
+    top: 0; /* Adjust the position so it doesn't overlap */
     left: -33px;
     transform: translateY(0);
   }
 
   .content p{
     font-size: 10px;
-    top: 18%; /* Adjust the position so it doesn't overlap */
+    top: 13%; /* Adjust the position so it doesn't overlap */
     left: -35px;
     transform: translateY(0);
   }
