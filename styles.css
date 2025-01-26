@@ -29,7 +29,6 @@ html {
   list-style: none;
   padding: 20px;
   padding-right: 120px;
-
 }
 
 .navbar a {
@@ -42,105 +41,90 @@ html {
   color: #3F9D00;
 }
 
+/* Flex container for the front section */
 .front {
   display: flex;
-  justify-content: space-evenly;
-  
+  justify-content: space-between; /* Align the content (left) and carousel (right) */
+  align-items: center; /* Vertically align both content and carousel */
+  padding: 0 20px; /* Add padding to the sides */
 }
 
-.front img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin-left: 0rem;
-  animation: imageSlide 12s infinite;
-
-}
-
-
-.front img:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.front img:nth-child(2) {
-  animation-delay: 2s;
-}
-
-.front img:nth-child(3) {
-  animation-delay: 4s;
-}
-
-.front img:nth-child(4) {
-  animation-delay: 8s;
-}
-
-
-@keyframes imageSlide {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
+/* Left text section */
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  max-width: 40%; /* Ensure the text section only takes 40% of the screen width */
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .line-one {
-  position: absolute;
-  margin-left: 3rem;
-  margin-top: -15rem;
-  font-size: 32px;
+  font-size: 2.5rem;
   color: #5DB32E;
 }
 
 .line-two {
-  position: absolute;
-  margin-left: 2.8rem;
-  margin-top: -2rem;
-  font-size: 32px;
+  font-size: 2.5rem;
   color: #DC1278;
 }
 
-.line-one h2,
-.line-two h2 {
-  margin: 0;
-}
-
-.content p {
-  position: absolute;
-  margin-left: 3rem;
-  margin-top: 6rem;
-  font-size: 25px;
-}
-
-#img-content {
-  margin-top: 31rem;
+.content p{
   font-size: 1.5rem;
-  margin-left: 30px;
-  color: #5a5353;
+}
+
+/* Right carousel section */
+.carousel {
+  position: relative;
+  width: 50%; /* The carousel takes 40% of the screen width */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center images horizontally */
+  justify-content: center; /* Center images vertically */
+}
+
+.carousel-item {
+  display: none; /* Hide images initially */
   text-align: center;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .active {
+  display: block; /* Only show the active image */
+}
+
+/* Center text section (below both content and carousel) */
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px; /* Space between the content/carousel and the changing text */
+}
+
+.center-text p {
+  font-size: 1.3rem;
+  color: black;
+  max-width: 80%; /* Limit width so the text doesn't stretch too much */
+  margin: 0;
+}
+
+#products-section{
+  padding-top: 30px;
+}
 
 .products {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .products>div {
@@ -149,7 +133,6 @@ html {
   align-items: center;
   position: relative;
 }
-
 
 .line {
   border: 3px solid grey;
@@ -175,14 +158,10 @@ html {
   left: 99px;
 }
 
-
 .products img:hover {
   transform: scale(1.1);
   /*Scale the image by 1.1 times when hovered */
 }
-
-
-
 
 .products img {
   width: 100px;
@@ -384,11 +363,28 @@ h1 {
 
 footer {
   background-color: #F6F6F6;
-  height: 250px;
-  margin-bottom: 100px;
+  height: 230px;
+  margin-bottom: 50px;
 }
 
+.social-icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  position: relative;
+  bottom: 120px;
+  margin-right: 20px;
+}
 
+.social-icons img{
+  height: 35px;
+  width: 35px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover{
+  transform: scale(1.1);
+}
 
 .logo1 {
   height: 70px;
@@ -396,7 +392,6 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: -250px;
-
 }
 
 .foot h2 {
@@ -408,7 +403,7 @@ footer {
 .contact {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .contact img {
@@ -445,17 +440,18 @@ footer {
 
 .contact a:hover {
   transform: scale(1.1);
-
 }
 
-.ak-digital {
+.copyright {
+padding-bottom: 8px;
+}
+
+.copyright h6 {
   text-align: center;
-  color: gray;
-  margin-top: 40px;
 }
 
-.ak-digital a{
-  color: gray;
+.copyright a {
+  color: royalblue;
   text-decoration: none;
 }
 
@@ -500,81 +496,33 @@ footer {
     /* Keep the hover effect intact */
   }
 
-
-  .front img {
-    position: absolute;
-    width: 85%;
-    height: auto;
-    margin-left: 75px;
-    animation: imageSlide 12s infinite;
-
+  .content{
+    margin-left: 10px;
+    margin-top: 20px;
   }
-
-
-  .front img:nth-child(1) {
-    animation-delay: 0s;
-  }
-
-  .front img:nth-child(2) {
-    animation-delay: 2s;
-  }
-
-  .front img:nth-child(3) {
-    animation-delay: 4s;
-  }
-
-  .front img:nth-child(4) {
-    animation-delay: 8s;
-  }
-
-
-  @keyframes imageSlide {
-    0% {
-      opacity: 0;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-
 
   .line-one {
-    font-size: 15px;
-    margin-top: -170px;
-    margin-left: 25px;
-    transform: translateY(0);
+    font-size: 12px;
   }
 
   .line-two {
-    font-size: 15px;
-    margin-top: -4rem;
-    margin-left: 1.5rem;
-    transform: translateY(0);
+    font-size: 12px;
   }
 
   .content p {
-    font-size: 10px;
-    margin-top: -3px;
-    margin-left: 25px;
-    transform: translateY(0);
+    font-size: 8px;
   }
 
+  .center-text{
+    margin-top: 20px;
+  }
 
-  #img-content {
-    font-size: 14px;
-    margin-top: 210px;
-    margin-left: 10px;
-    transform: translateY(0);
+  .center-text p{
+    font-size: 0.55rem;
+  }
+
+  #products-section{
+    padding-top: 0px;
   }
 
   .products {
@@ -596,8 +544,6 @@ footer {
     font-size: 13px;
     /* Adjust font size for smaller screens */
   }
-
-
 
   .main-container,
   .main-container1,
@@ -722,7 +668,19 @@ footer {
     font-size: 1.3rem;
   }
 
+  .copyright h6{
+    font-size: 0.5rem;
+  }
 
+  .social-icons img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .social-icons{
+    bottom: 112px;
+    margin-right: 10px;
+  }
 
 }
 
@@ -767,81 +725,33 @@ footer {
     /* Keep the hover effect intact */
   }
 
-
-  .front img {
-    position: absolute;
-    width: 85%;
-    height: auto;
-    margin-left: 111px;
-    animation: imageSlide 12s infinite;
-
+  .content{
+    margin-left: 30px;
+    margin-top: 18px;
   }
 
-
-  .front img:nth-child(1) {
-    animation-delay: 0s;
+  .line-one{
+    font-size: 1rem;
   }
 
-  .front img:nth-child(2) {
-    animation-delay: 2s;
+  .line-two{
+    font-size: 1rem;
   }
 
-  .front img:nth-child(3) {
-    animation-delay: 4s;
+  .content p{
+    font-size: 0.8rem;
   }
 
-  .front img:nth-child(4) {
-    animation-delay: 8s;
+  .center-text{
+    margin-top: 20px;
   }
 
-
-  @keyframes imageSlide {
-    0% {
-      opacity: 0;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0;
-    }
+  .center-text p{
+    font-size: 0.8rem;
   }
 
-
-
-  .line-one {
-    font-size: 18px;
-    margin-top: 8rem;
-    margin-left: -13rem;  
-    transform: translateY(0);
-  }
-
-  .line-two {
-    font-size: 18px;
-    margin-top: 16rem;
-    margin-left: -13rem;
-    transform: translateY(0);
-  }
-
-  .content p {
-    font-size: 15px;
-    margin-top: 21rem;
-    margin-left: -13rem;
-    transform: translateY(0);
-  }
-
-
-  #img-content {
-    font-size: 14px;
-    margin-top: 22rem;
-    margin-left: 10px;
-    position: relative;
+  #products-section{
+    padding-top: 0px;
   }
 
   .products {
@@ -1006,6 +916,7 @@ footer {
 
   .contact {
     margin-bottom: 50px;
+    margin-top: 0;
   }
 
   .contact a {
@@ -1019,6 +930,20 @@ footer {
 
   .foot h2 {
     font-size: 1.2rem;
+  }
+
+  footer{
+    margin-bottom: 35px;
+  }
+
+  .social-icons img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .social-icons{
+    bottom: 108px;
+    margin-right: 10px;
   }
 }
 
@@ -1062,77 +987,33 @@ footer {
     /* Keep the hover effect intact */
   }
 
-
-  .front img {
-    position: absolute;
-    width: 85%;
-    height: auto;
-    margin-left: 175px;
-    animation: imageSlide 12s infinite;
-
+  .content{
+    margin-left: 50px;
+    margin-top: 25px;
   }
 
-
-  .front img:nth-child(1) {
-    animation-delay: 0s;
+  .line-one{
+    font-size: 1.5rem;
   }
 
-  .front img:nth-child(2) {
-    animation-delay: 2s;
+  .line-two{
+    font-size: 1.5rem;
   }
 
-  .front img:nth-child(3) {
-    animation-delay: 4s;
+  .content p{
+    font-size: 1rem;
   }
 
-  .front img:nth-child(4) {
-    animation-delay: 8s;
+  .center-text{
+    margin-top: 30px;
   }
 
-
-  @keyframes imageSlide {
-    0% {
-      opacity: 0;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0;
-    }
+  .center-text p{
+    font-size: 0.9rem;
   }
 
-
-
-  .line-one {
-    font-size: 26px;
-    transform: translateY(0);
-  }
-
-  .line-two {
-    font-size: 26px;
-    margin-top: -60px;
-    transform: translateY(0);
-  }
-
-  .content p {
-    font-size: 20px;
-   margin-top: 45px;
-    transform: translateY(0);
-  }
-
-
-  #img-content {
-    font-size: 15px;
-    margin-top: 450px;
-    margin-left: 10px;
-    transform: translateY(0);
+  #products-section{
+    padding-top: 0px;
   }
 
   .products {
@@ -1181,7 +1062,7 @@ footer {
   .image-container3 {
     width: 30%;
     height: 255px;
-    margin-left: 20px;
+    margin-left: 12px;
     top: -40%;
     margin-top: -227px;
   }
@@ -1294,9 +1175,43 @@ footer {
   }
 }
 
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+.line-one{
+  font-size: 1.8rem;
+}
+
+.line-two{
+  font-size: 1.8rem;
+}
+
+.content p{
+  font-size: 1.2rem;
+}
+
+}
+
+
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   body {
     overflow-x: hidden;
+  }
+
+  .content{
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+
+  .line-one{
+    font-size: 2rem;
+  }
+
+  .line-two{
+    font-size: 2rem;
+  }
+
+  .content p{
+    font-size: 1.2rem;
   }
 
   .line{
@@ -1345,144 +1260,41 @@ footer {
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 715px) {
-  .front {
-    flex-direction: column;
-    /* Stack images and content vertically */
-    align-items: center;
-    /* Center content and images */
-  }
+@media only screen and (min-width: 600px) and (max-width: 767px) {
 
-  .front img {
-    position: absolute;
-    /* Use relative positioning for responsive images */
-    margin-left: 135px;
-    /* Reset margin-left to avoid cutting off images */
-    width: 80%;
-    /* Make images smaller to fit better on mobile */
-    height: auto;
-    /* Maintain aspect ratio */
-    animation: imageSlide 12s infinite;
-  }
-
-  #img-content {
-    margin-top: 18rem;
-  }
-
-  .front img:nth-child(1) {
-    animation-delay: 0s;
-  }
-
-  .front img:nth-child(2) {
-    animation-delay: 2s;
-  }
-
-  .front img:nth-child(3) {
-    animation-delay: 4s;
-  }
-
-  .front img:nth-child(4) {
-    animation-delay: 8s;
-  }
-
-
-  @keyframes imageSlide {
-    0% {
-      opacity: 0;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 716px) and (max-width: 767px) {
-  .line-one{
-    font-size: 18px;
-    margin-top: -14rem;
-    margin-left: 2rem;
-  }
   
-  .line-two{
-    font-size: 18px;
-    margin-top: -6rem;
-    margin-left: 1.9rem;
-}
-
-.content p{
-  font-size: 15px;
-        margin-top: -1rem;
-        margin-left: 1.9rem;
-}
-  }
-
-
-
-@media only screen and (max-width: 300px) {
-  .front img {
-    margin-left: 65px;
-  }
-
   .line-one{
-    font-size: 8px;
+    font-size: 1.3rem;
   }
 
   .line-two{
-    font-size: 8px;
-    margin-top: -114px;
+    font-size: 1.3rem;
   }
 
   .content p{
-    font-size: 7px;
-    margin-top: -80px;
+    font-size: 0.9rem;
   }
-  #img-content {
-    margin-top: 140px;
-  }
+
+
 }
 
 @media only screen and (min-width: 301px) and (max-width: 400px) {
-  .front img {
-    margin-left: 55px;
-  }
 
   .line-one,
   .line-two {
     font-size: 10px;
   }
 
-  .line-two{
-    margin-top: -100px;
+  .content{
+    margin-top: 0;
   }
 
-  .content p{
-    margin-top: -55px;
+  .center-text{
+    margin-top: 10px;
   }
 
-
- 
-  #img-content {
-    margin-top: 165px;
-  }
-}
-
-
-@media only screen and (min-width: 765px) and (max-width: 900px) {
-  .front img {
-    margin-left: 125px;
-  }
-
-  #img-content {
-    margin-top: 400px;
+  .center-text p{
+    font-size: 0.5rem;
   }
 }
 
@@ -1501,12 +1313,9 @@ footer {
     display: none;
   }
 
-
-
   main {
     height: 100%;
     width: 100%;
-
   }
 
   footer {
@@ -1514,13 +1323,6 @@ footer {
     width: 100%;
   }
 
-  .front img {
-    height: auto;
-  }
-
-  #img-content {
-    margin-top: 70rem;
-  }
 }
 
 @media only screen and (min-width: 520px) and (max-width: 767px) {
